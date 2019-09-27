@@ -9,6 +9,7 @@ services:
       - 67:67/udp
       - 80:80/tcp
       - 443:443/tcp
+    env_file: docker_env
     environment:
       - TZ=Asia/Manila
     volumes:
