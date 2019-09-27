@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  duckdns:
+    image: linuxserver/duckdns
+    container_name: duckdns
+    env_file: docker_env
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Manila
+      - LOG_FILE=false
+    restart: unless-stopped

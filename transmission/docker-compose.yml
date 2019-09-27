@@ -7,9 +7,6 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Asia/Manila
-      # - TRANSMISSION_WEB_HOME=/combustion-release/ #optional
-      # - USER=username #optional
-      # - PASS=password #optional
     volumes:
       - /mnt/external/transmission/config:/config
       - /mnt/external/transmission/downloads:/downloads
