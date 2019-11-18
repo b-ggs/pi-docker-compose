@@ -8,9 +8,9 @@ services:
       - PGID=1000
       - TZ=Asia/Manila
     volumes:
-      - /mnt/external/transmission/config:/config
-      - /mnt/external/transmission/downloads:/downloads
-      - /mnt/external/transmission/watch:/watch
+      - /home/pi/transmission/config:/config
+      - /home/pi/transmission/downloads:/downloads
+      - /home/pi/transmission/watch:/watch
     ports:
       - 9091:9091
       - 51413:51413
